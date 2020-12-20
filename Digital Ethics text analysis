@@ -1,0 +1,138 @@
+import pandas as pd
+import numpy as np
+import os
+
+import nltk
+nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('maxent_ne_chunker')
+nltk.download('words')
+from collections import Counter
+
+import nltk.corpus
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+from nltk.tokenize import sent_tokenize
+from nltk.probability import FreqDist
+
+from urllib.request import urlopen
+from bs4 import BeautifulSoup
+import matplotlib.pyplot as plt
+from wordcloud import WordCloud, STOPWORDS 
+from collections import Counter
+import json
+from urllib.request import urlopen
+import requests
+import urllib.request
+import jgraph as jg
+
+import chart_studio.plotly as py
+from plotly.offline import iplot
+import plotly.graph_objs as go
+
+import textract
+import os
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import itertools
+import collections
+
+import nltk
+from nltk import bigrams
+from nltk.corpus import stopwords
+import re
+import networkx as nx
+
+import warnings
+warnings.filterwarnings("ignore")
+
+sns.set(font_scale=1.5)
+sns.set_style("whitegrid")
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
+from io import StringIO
+
+from pdfminer.converter import TextConverter
+from pdfminer.layout import LAParams
+from pdfminer.pdfdocument import PDFDocument
+from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
+from pdfminer.pdfpage import PDFPage
+from pdfminer.pdfparser import PDFParser
+import gensim
+from gensim.parsing.preprocessing import STOPWORDS
+from gensim.parsing.preprocessing import remove_stopwords
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+
+import networkx as nx
+from nltk.corpus import stopwords
+from tqdm import tqdm
+from networkx.algorithms import community
+import matplotlib.pyplot as plt
+import logging
+from random import random
+
+#loading the text file
+text_as_string = open('all.txt').read()
+#lower case
+text_as_string = text_as_string.lower()
+import re
+result = re.sub(r'\d+', '', text_as_string)
+print(result)
+
+#removing stopwords and punctuation
+all_stopwords = gensim.parsing.preprocessing.STOPWORDS
+new_stopword = STOPWORDS.union(set(['e','x','p','j','n','p','r', 'd', 't', 'm', 'com', 'www', 's','pp','c','l','g','s','org','b','v','doi','o','l', 'https', 'fig', 'non', 'ac', 'ox', 'oii', 'et', 'al']))
+
+punc = '''!()-[]{};:'"\, <>./?@#$%^&*_~'''
+newstring=result.translate(punc)
+filtered_sentence = remove_stopwords(newstring)
+txt_tokens = word_tokenize(filtered_sentence)
+words=[word.lower() for word in txt_tokens if word.isalpha()]
+tok_without_sw = [word for word in words if not word.lower() in new_stopword]
+print(len(tok_without_sw))
+
+# Frequency Distribution Plot
+fdist = FreqDist(tok_without_sw)
+df_fdist = pd.DataFrame(fdist.items(), columns=['word', 'frequency'])
+#top 20 words 
+df_fdist20 = df_fdist.sort_values(['frequency'], ascending=False).head(20)
+df_fdist20 
+
+#ploting top 20 words 
+plt.figure(figsize=(20,10))
+sns.catplot(y="word", x="frequency", kind="bar", palette="ch:.25", data=df_fdist20, height=8.27, aspect=11.7/8.27)
+plt.title('TOP 20 frequent words which occurred the texts')
+
+# using list comprehension 
+listToStr= ' '.join(map(str, tok_without_sw)) 
+
+# Create and generate a word cloud image:
+wordcloud = WordCloud(width=1600, height=800, max_font_size=200, max_words=100, background_color="white", collocations=True).generate(listToStr)
+
+# Display the generated image:
+plt.figure(figsize=(20,10))
+plt.imshow(wordcloud)
+plt.title('Wordcloud of TOP 100 frequent words which occurred the texts')
+plt.axis("off")
+plt.show()
+
+#top 20 bigrams 
+bigrams_series = (pd.Series(nltk.ngrams(tok_without_sw, 2)).value_counts())[:20]
+bigrams_top = pd.DataFrame(bigrams_series.sort_values(ascending=False))
+bigrams_top = bigrams_top.reset_index().rename(columns={'index': 'bigrams', 0:'counts'})
+bigrams_top
+plt.figure(figsize=(20,10))
+sns.catplot(x = 'counts' , y='bigrams', kind="bar", palette="ch:.25", data=bigrams_top, height=8.27, aspect=11.7/8.27)
+plt.title('TOP 20 pair of words which occurred the texts')
+
+#creating dataframe
+bigrams_ser = (pd.Series(nltk.ngrams(tok_without_sw, 2)).value_counts())[:500]
+bigrams_df = pd.DataFrame({'bigram':bigrams_ser.index, 'count':bigrams_ser.values})
+bigrams_df
+
+# dataframe for network
+bigrams_df.to_csv('out.csv', index=False)
