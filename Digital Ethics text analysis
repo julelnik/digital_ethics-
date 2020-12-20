@@ -1,36 +1,15 @@
 import pandas as pd
 import numpy as np
 import os
-
 import nltk
-nltk.download('stopwords')
-nltk.download('punkt')
-nltk.download('averaged_perceptron_tagger')
-nltk.download('maxent_ne_chunker')
-nltk.download('words')
 from collections import Counter
-
 import nltk.corpus
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.tokenize import sent_tokenize
 from nltk.probability import FreqDist
-
-from urllib.request import urlopen
-from bs4 import BeautifulSoup
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud, STOPWORDS 
-from collections import Counter
-import json
-from urllib.request import urlopen
-import requests
-import urllib.request
-import jgraph as jg
-
-import chart_studio.plotly as py
-from plotly.offline import iplot
-import plotly.graph_objs as go
-
 import textract
 import os
 import numpy as np
@@ -39,57 +18,34 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import itertools
 import collections
-
 import nltk
 from nltk import bigrams
 from nltk.corpus import stopwords
 import re
 import networkx as nx
-
-import warnings
-warnings.filterwarnings("ignore")
-
-sns.set(font_scale=1.5)
-sns.set_style("whitegrid")
-import ssl
-ssl._create_default_https_context = ssl._create_unverified_context
-from io import StringIO
-
-from pdfminer.converter import TextConverter
-from pdfminer.layout import LAParams
-from pdfminer.pdfdocument import PDFDocument
-from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
-from pdfminer.pdfpage import PDFPage
-from pdfminer.pdfparser import PDFParser
 import gensim
 from gensim.parsing.preprocessing import STOPWORDS
 from gensim.parsing.preprocessing import remove_stopwords
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 
-import networkx as nx
-from nltk.corpus import stopwords
-from tqdm import tqdm
-from networkx.algorithms import community
-import matplotlib.pyplot as plt
-import logging
-from random import random
 
 #loading the text file
 text_as_string = open('all.txt').read()
+
 #lower case
 text_as_string = text_as_string.lower()
-import re
 result = re.sub(r'\d+', '', text_as_string)
 print(result)
 
 #removing stopwords and punctuation
 all_stopwords = gensim.parsing.preprocessing.STOPWORDS
 new_stopword = STOPWORDS.union(set(['e','x','p','j','n','p','r', 'd', 't', 'm', 'com', 'www', 's','pp','c','l','g','s','org','b','v','doi','o','l', 'https', 'fig', 'non', 'ac', 'ox', 'oii', 'et', 'al']))
-
 punc = '''!()-[]{};:'"\, <>./?@#$%^&*_~'''
 newstring=result.translate(punc)
 filtered_sentence = remove_stopwords(newstring)
+
+#tokenization
 txt_tokens = word_tokenize(filtered_sentence)
 words=[word.lower() for word in txt_tokens if word.isalpha()]
 tok_without_sw = [word for word in words if not word.lower() in new_stopword]
