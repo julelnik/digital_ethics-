@@ -2,7 +2,8 @@
 
 ### Research question
 How the concept space of the Digital Ethics research looks like?
-The aim of the research is to identify the range of the topics around Digital Ethics studies.
+
+#### The aim of the research is to identify the range of the topics around Digital Ethics studies.
 
 ### Code and data
 <code>notebook</code> Python code with preprocessing and cleaning the text, visualisation of the discourse and creation of the dataframe for network analysis
