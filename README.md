@@ -8,9 +8,9 @@ How the concept space of the Digital Ethics research looks like?
 The notebook intends to analyse 50 scientific articles on Digital Ethics to visualize the discourse space.
 
 The data consists of two files:
-
 <li><code>all_texts.txt</code>: the final text file with 50 articles merged
-data_for_network.csv: the dataframe file with 500 bigrams and their nodes weight  
+<li><code>data_for_network.csv</code>: the dataframe file with 500 bigrams and their nodes weight 
+
 
 
 # Steps:
