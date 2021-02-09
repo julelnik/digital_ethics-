@@ -6,12 +6,12 @@ How the concept space of the Digital Ethics research looks like?
 ### Aim of the research
 To identify the range of the topics around Digital Ethics studies.
 
+### Code and data
 The notebook intends to analyse 50 scientific articles on Digital Ethics to visualize the discourse space.
 
 The data consists of two files:
 <li><code>all_texts.txt</code>: the final text file with 50 articles merged
 <li><code>data_for_network.csv</code>: the dataframe file with 500 bigrams and their nodes weight 
-
 
 
 # Steps:
