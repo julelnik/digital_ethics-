@@ -6,12 +6,13 @@ How the concept space of the Digital Ethics research looks like?
 The aim of the research is to identify the range of the topics around Digital Ethics studies.
 
 ### Code and data
-<code>notebook</code> Python code with preprocessing and cleaning the text, visualisation of the discourse and creation of the dataframe for network analysis
+<code>notebook.ipynb</code>: Python code with preprocessing and cleaning the text, visualisation of the discourse and creation of the dataframe for network analysis
 
 The data consists of two files:
 <li><code>all_texts.txt</code>: the final text file with 50 articles merged
 <li><code>data_for_network.csv</code>: the dataframe file with 500 bigrams and their nodes weight 
 
+<code>ethics.gephi</code>: the output Gephi network file
 
 # Steps:
 ### Data collection
