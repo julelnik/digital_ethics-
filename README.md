@@ -14,4 +14,6 @@
 6. Additional analysis of the network
 
 
-![Ethics network](ethics network.png)
+![Ethics network](https://github.com/yuliianikolaenko/Data_Science_network_analysis/blob/main/ethics%20network.png)
+
+https://github.com/yuliianikolaenko/Data_Science_network_analysis/blob/main/ethics%20network.png
