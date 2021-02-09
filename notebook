@@ -1,37 +1,31 @@
 import pandas as pd
 import numpy as np
 import os
-import nltk
 from collections import Counter
+import seaborn as sns
+import itertools
+import collections
+import matplotlib.pyplot as plt
+from wordcloud import WordCloud, STOPWORDS 
+import textract
+import re
+import networkx as nx
+
+import nltk
 import nltk.corpus
+from nltk import bigrams
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.tokenize import sent_tokenize
 from nltk.probability import FreqDist
-import matplotlib.pyplot as plt
-from wordcloud import WordCloud, STOPWORDS 
-import textract
-import os
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-import itertools
-import collections
-import nltk
-from nltk import bigrams
-from nltk.corpus import stopwords
-import re
-import networkx as nx
+
 import gensim
 from gensim.parsing.preprocessing import STOPWORDS
 from gensim.parsing.preprocessing import remove_stopwords
-from nltk.tokenize import word_tokenize
-from nltk.corpus import stopwords
 
 
 #loading the text file
-text_as_string = open('all.txt').read()
+text_as_string = open('all_texts.txt').read()
 
 #lower case
 text_as_string = text_as_string.lower()
@@ -91,4 +85,4 @@ bigrams_df = pd.DataFrame({'bigram':bigrams_ser.index, 'count':bigrams_ser.value
 bigrams_df
 
 # dataframe for network
-bigrams_df.to_csv('out.csv', index=False)
+bigrams_df.to_csv('data_for_network.csv', index=False)
