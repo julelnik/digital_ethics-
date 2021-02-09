@@ -11,5 +11,6 @@ Main tasks:
 3. Cleaning the text data: lower case, identify and remove the stopwords, noise and punctuation;
 4. Creating the dataframe for the network analysis based on the words appearance 2-grams
 5. Creating the network: calculate centrality and assigning communities
+small ethics network.png
 6. Additional analysis of the network
 
