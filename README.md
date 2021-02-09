@@ -11,11 +11,13 @@
 5. Creating the network: calculate centrality and assigning communities;
 6. Additional analysis of the network.
 
-#### Exploration of the Digital Ethics discourse using the TOP 20 most frequent words
+#### Exploration of the Digital Ethics discourse using the TOP 20 most frequent words and bigrams
 ![TOP20 words](https://github.com/yuliianikolaenko/Data_Science_network_analysis/blob/main/top20_words.png)
 
-#### Exploration of the Digital Ethics discourse using the TOP 20 most frequent words
 ![TOP20 bigrams](https://github.com/yuliianikolaenko/Data_Science_network_analysis/blob/main/top20_bigrams.png)
+
+#### Discourse space conducted with the Wordcloud
+![Wordcloud](https://github.com/yuliianikolaenko/Data_Science_network_analysis/blob/main/wordcloud.png)
 
 #### Final Network
 ![Ethics network](https://github.com/yuliianikolaenko/Data_Science_network_analysis/blob/main/ethics%20network.png)
