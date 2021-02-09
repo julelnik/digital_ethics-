@@ -14,7 +14,7 @@ The data consists of two files:
 
 <code>ethics.gephi</code>: the output Gephi network file
 
-# Steps:
+# Steps
 ### Data collection
 Articles for each topic connected with Digital Ethics studies: AI, Robotics, Open Government, Open Source, Accessibility.
 Articles were collected through Google Scholar, all texts were publicly available and free of charge. For each category, 10 of the most recent articles were collected, which included an ethical framework for study of Tech.
