@@ -36,7 +36,9 @@ Community detection and clustering.
 
 # Visualisation 
 ### Exploration of the Digital Ethics discourse
-![TOP20 words](https://github.com/yuliianikolaenko/Data_Science_network_analysis/blob/main/images/top20_words.png) ![TOP20 bigrams (https://github.com/yuliianikolaenko/Data_Science_network_analysis/blob/main/images/top20_bigrams.png)
+![TOP20 words](https://github.com/yuliianikolaenko/Data_Science_network_analysis/blob/main/images/top20_words.png) 
+
+![TOP20 bigrams](https://github.com/yuliianikolaenko/Data_Science_network_analysis/blob/main/images/top20_bigrams.png)
 
 ![Wordcloud](https://github.com/yuliianikolaenko/Data_Science_network_analysis/blob/main/images/wordcloud.png)
 
