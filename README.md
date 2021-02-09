@@ -1,7 +1,7 @@
 # Digital_Ethics
 ## Digital Ethics concepts mapping
 ### Research question: How the concept space of the Digital Ethics research looks like?
-#### Aim of the research: to identify the range of the topics around Digital Ethics studies.
+### Aim of the research: to identify the range of the topics around Digital Ethics studies.
 
 #### Main tasks:
 1. Data collection, 10 articles for each topic connected with Digital Ethics studies: AI, Robotics, Open Government, Open Source, Accessibility;
