@@ -2,23 +2,27 @@
 
 ### Research question
 How the concept space of the Digital Ethics research looks like?
-###
-Aim of the research: to identify the range of the topics around Digital Ethics studies.
 
-#### Main tasks:
+### Aim of the research is to identify the range of the topics around Digital Ethics studies.
+
+The notebook intends to analyse 50 scientific articles on Digital Ethics to visualize the discourse space.
+
+The data consists of two files:
+all_texts.txt: the final text file with 50 articles merged
+data_for_network.csv: the dataframe file with 500 bigrams and their nodes weight  
+
+
+# STEPS:
 1. Data collection: articles for each topic connected with Digital Ethics studies: AI, Robotics, Open Government, Open Source, Accessibility.
 Articles were collected through Google Scholar, all texts were publicly available and free of charge. For each category, 10 of the most recent articles were collected, which included an ethical framework for study of Tech.
 
 2. Data preparation: transforming pdf to text files, merging texts.
-The final text file *all_texts.txt*
 
 3. Cleaning the text data: lower case, identify and remove the stopwords, noise and punctuation.
 
 4. Creating the dataframe for the network analysis based on the words appearance 2-grams.
-The final dataframe file *data_for_network.csv*
 
 5. Creating the network: setting the nodes and edges size, calculating centrality and assigning communities.
-The Gephi file *ethics.gephi*
 
 6. Additional analysis of the network: community detection and clustering.
 
