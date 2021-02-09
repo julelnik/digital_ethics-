@@ -14,18 +14,24 @@ The data consists of two files:
 
 
 # Steps:
-1. Data collection: articles for each topic connected with Digital Ethics studies: AI, Robotics, Open Government, Open Source, Accessibility.
+#### Data collection
+Articles for each topic connected with Digital Ethics studies: AI, Robotics, Open Government, Open Source, Accessibility.
 Articles were collected through Google Scholar, all texts were publicly available and free of charge. For each category, 10 of the most recent articles were collected, which included an ethical framework for study of Tech.
 
-2. Data preparation: transforming pdf to text files, merging texts.
+#### Data preparation
+Transforming pdf to text files, merging texts.
 
-3. Cleaning the text data: lower case, identify and remove the stopwords, noise and punctuation.
+#### Cleaning the text data
+Lower case, identify and remove the stopwords, noise and punctuation.
 
-4. Creating the dataframe for the network analysis based on the words appearance 2-grams.
+#### Creating the dataframe for the network analysis 
+Dataframe based on the words appearance 2-grams and their nodes weight
 
-5. Creating the network: setting the nodes and edges size, calculating centrality and assigning communities.
+#### Creating the network 
+Setting the nodes and edges size, calculating centrality and assigning communities.
 
-6. Additional analysis of the network: community detection and clustering.
+#### Additional analysis of the network
+Community detection and clustering.
 
 # Visualisation 
 Exploration of the Digital Ethics discourse using the TOP 20 most frequent words and bigrams
