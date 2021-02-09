@@ -35,12 +35,9 @@ Setting the nodes and edges size, calculating centrality and assigning communiti
 Community detection and clustering.
 
 # Visualisation 
-Exploration of the Digital Ethics discourse using the TOP 20 most frequent words and bigrams
-![TOP20 words](https://github.com/yuliianikolaenko/Data_Science_network_analysis/blob/main/images/top20_words.png)
+### Exploration of the Digital Ethics discourse
+![TOP20 words](https://github.com/yuliianikolaenko/Data_Science_network_analysis/blob/main/images/top20_words.png) ![TOP20 bigrams (https://github.com/yuliianikolaenko/Data_Science_network_analysis/blob/main/images/top20_bigrams.png)
 
-![TOP20 bigrams](https://github.com/yuliianikolaenko/Data_Science_network_analysis/blob/main/images/top20_bigrams.png)
-
-Discourse space visualization with Wordcloud of TOP 100 frequent words 
 ![Wordcloud](https://github.com/yuliianikolaenko/Data_Science_network_analysis/blob/main/images/wordcloud.png)
 
 # Final Result
