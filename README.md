@@ -28,15 +28,16 @@ Articles were collected through Google Scholar, all texts were publicly availabl
 
 6. Additional analysis of the network: community detection and clustering.
 
-#### Exploration of the Digital Ethics discourse using the TOP 20 most frequent words and bigrams
+# Visualisation 
+Exploration of the Digital Ethics discourse using the TOP 20 most frequent words and bigrams
 ![TOP20 words](https://github.com/yuliianikolaenko/Data_Science_network_analysis/blob/main/top20_words.png)
 
 ![TOP20 bigrams](https://github.com/yuliianikolaenko/Data_Science_network_analysis/blob/main/top20_bigrams.png)
 
-#### Discourse space visualization with Wordcloud of TOP 100 frequent words 
+Discourse space visualization with Wordcloud of TOP 100 frequent words 
 ![Wordcloud](https://github.com/yuliianikolaenko/Data_Science_network_analysis/blob/main/wordcloud.png)
 
-#### Final Network
+# Final Result
 ![Ethics network](https://github.com/yuliianikolaenko/Data_Science_network_analysis/blob/main/ethics%20network.png)
 
 
