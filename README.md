@@ -35,6 +35,12 @@ Setting the nodes and edges size, calculating centrality and assigning communiti
 Community detection and clustering.
 
 # Visualisation 
+
+<p float="left">
+  <img src="/top20_words.png" width="100" />
+  <img src="/top20_bigrams" width="100" /> 
+</p>
+
 ### Exploration of the Digital Ethics discourse
 ![TOP20 words](https://github.com/yuliianikolaenko/Data_Science_network_analysis/blob/main/images/top20_words.png) 
 
