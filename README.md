@@ -14,3 +14,4 @@
 6. Additional analysis of the network
 
 
+![Network](ethics network.png)
